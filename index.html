@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styleme.css">
+    <title>Lab2</title>
+</head>
+<body>
+
+    <h1>About Nizar Muala</h1>
+
+    <p>My name is Nizar, and here you will learn a few things about me.</p>
+    <hr>
+    <h2>My Classes This Quarter</h2>
+    
+    <ul>
+        <li>CS422: Database Management Systems</li>
+        <li>CS472: Web Programming</li>
+        <li>CS545: Web Application Architecture</li>
+        <li>CS544: Enterprise Architecture</li>
+    </ul>
+    
+    <h2>My Favorite Movies</h2>
+    
+    <ol class="reversed-list">
+        <li>
+            <strong><a href="#" onclick="toggleMovieInfo(1)">The Shawshank Redemption (1994) (<a href="https://www.imdb.com/title/tt0111161/?ref_=nv_sr_srsg_0_tt_6_nm_0_q_The%2520Shawshank%2520Redemption%2520(1994)">IMDB</a>)</a></strong>
+            <ul id="movie1" class="movie-info">
+                <li><strong>Genre:</strong> Drama</li>
+                <li><strong>Director:</strong> Frank Darabont</li>
+                <li><strong>Plot:</strong> Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</li>
+                <li><strong>Stars:</strong> Tim Robbins, Morgan Freeman, Bob Gunton</li>
+            </ul>
+        </li>
+        <li>
+            <strong><a href="#" onclick="toggleMovieInfo(2)">Passengers (2016) (<a href="https://www.imdb.com/title/tt1355644/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Passengers%2520(2016)">IMDB</a>)</a></strong>
+            <ul id="movie2" class="movie-info">
+                <li><strong>Genre:</strong> Sci-Fi, Drama</li>
+                <li><strong>Director:</strong> Morten Tyldum</li>
+                <li><strong>Plot:</strong> A spacecraft traveling to a distant colony planet and transporting thousands of people has a malfunction in its sleep chambers, causing two passengers to wake up 90 years early.</li>
+                <li><strong>Stars:</strong> Jennifer Lawrence, Chris Pratt, Michael Sheen</li>
+            </ul>
+        </li>
+        <li>
+            <strong><a href="#" onclick="toggleMovieInfo(3)">Top Gun: Maverick (2022) (<a href="https://www.imdb.com/title/tt1745960/?ref_=nv_sr_srsg_0_tt_3_nm_0_q_Top%2520Gun%253A%2520Maverick">IMDB</a>)</a></strong>
+            <ul id="movie3" class="movie-info">
+                <li><strong>Genre:</strong> Action, Drama</li>
+                <li><strong>Director:</strong> Joseph Kosinski</li>
+                <li><strong>Plot:</strong> The sequel to the 1986 blockbuster, where Pete 'Maverick' Mitchell is back in action as a flight instructor, training the next generation of fighter pilots.</li>
+                <li><strong>Stars:</strong> Tom Cruise, Miles Teller, Jennifer Connelly</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <script>
+        function toggleMovieInfo(movieNumber) {
+            var movieInfo = document.getElementById("movie" + movieNumber);
+            if (movieInfo.style.display === "block") {
+                movieInfo.style.display = "none";
+            } else {
+                movieInfo.style.display = "block";
+            }
+        }
+    </script>
+    
+    <h2>My Moods</h2>
+    <p1>Happy:
+        <img src="Images/happy-man.jpg" alt="happy mood" style="width:300px;height:300px;">
+    
+       Sad:
+        <img src="Images/sad-man.jpg" alt="sad mood" style="width:300px;height:300px;">
+    </p1>
+    
+    <h2>Fun Facts About My Neighbors</h2>
+    
+    <ul>
+        <li>Sue Smith: Effervescent is a word that describes her</li>
+        <li>Bill Thompson: Loves playing Yu-Gi-Oh</li>  
+    </ul>
+    
+    <a href="https://validator.w3.org/nu/?doc=https://Nizar-Muala.github.io/wap.github.io/">
+        <img src="Images/HTML-Checker.png" alt="HTML Checker" style="width:100px;height:45px;">
+    </a>
+    
+    <a href="http://jigsaw.w3.org/css-validator/check/nu/?doc=https://Nizar-Muala.github.io/wap.github.io/">
+        <img src="Images/css_Checker.png" alt="CSS Checker" style="width:100px;height:45px;">
+    </a>
+    
+    </body>
+    </html>

@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(92, 99, 101);
+  }
+  
+  h1 {
+    color: rgb(69, 87, 122);
+    font-family: verdana;
+    font-size: 25px;
+  }
+  h2 {
+    color: rgb(69, 87, 122);
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  em {
+    color: yellow;
+    font-family: verdana;
+    font-size: 15px;
+  }
+  
+  p {
+    color: white;
+    font-family: verdana;
+    font-size: 15px;
+  }
+
+  li{
+    color: white;
+    font-family: verdana;
+    font-size: 15px;
+  }
